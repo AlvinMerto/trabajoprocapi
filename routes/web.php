@@ -18,8 +18,17 @@ $router->get('/', function () use ($router) {
        return \Illuminate\Support\Str::random(32);
 });
 
+$router->get('/test',"Apicontrol@testing");
+
 $router->group(["prefix"=>"api"], function() use ($router) {
     $router->post("signup",'Apicontrol@signup');
     $router->post("signin",'Apicontrol@signin');
+
+    $router->post("getcategory","Apicontrol@getcategory");
+    $router->post("postjob","Apicontrol@postjob");
+
+    $router->post("searchajob","Apicontrol@searchforajob");
+
+    $router->post("applytojob","Apicontrol@applytojob");
 });
 
