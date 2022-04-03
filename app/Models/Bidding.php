@@ -9,11 +9,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 	
-class JobPost extends Model implements AuthenticatableContract, AuthorizableContract {
+class Bidding extends Model implements AuthenticatableContract, AuthorizableContract {
 	use Authenticatable, Authorizable, HasFactory;
 
-	protected $table 	= "jobs";
-	protected $fillable = ["employerid","title","definition","joblocationlatitude","joblocationlongitude","jobReadableLocation","price","perwhatjb","range","workonlyfor","from","to","jobstatus","created_at","updated_at"];  
+	protected $table 		= "bidding";
+	protected $primaryKey   = "id";
+	protected $fillable     = ["workerid","employerid","jobid","bidprice","perwhat","typeofbid","status","created_at","updated_at"];
 }
 
 ?>

@@ -18,10 +18,10 @@ class Usersprofile extends Model implements AuthenticatableContract, Authorizabl
      *
      * @var array
      */
-    protected $table    = "userprofile";
+    protected $table      = "userprofile";
     
-    protected $fillable = [
-        'userid', 'name','address','addresslatitude','addresslongitude','status','created_at','updated_at'
+    protected $fillable   = [
+        'userid','name','location','locationlatitude','locationlongitude','address','addresslatitude','addresslongitude','pricewage','perwhat','status','created_at','updated_at'
     ];
 
     // 'location','locationlatitude','locationlongitude'

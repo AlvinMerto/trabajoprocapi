@@ -18,6 +18,9 @@ class Notificationtable extends Migration
             $table->increments("notifid")->unique();
             $table->string("table");
             $table->string("uniqueid");
+            $table->string("notiffrom");
+            $table->string("notiffor");
+            $table->string("thenotif");
             $table->boolean("isread");
             $table->timestamps();
         });

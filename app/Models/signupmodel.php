@@ -20,11 +20,11 @@ class signupmodel extends Model implements AuthenticatableContract, Authorizable
      */
     protected $table = "userstbl";
     
-    protected $fillable = [
-        'userid','username', 'password','emailaddress','typeofaccount','status'
+    protected $fillable = ['username', 'password','emailaddress','typeofaccount','status'
     ];
 
     // protected $hidden = [
+    // 'userid',
     //     'password',
     // ];
 }

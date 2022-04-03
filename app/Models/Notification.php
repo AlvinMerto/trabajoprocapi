@@ -13,7 +13,7 @@ class Notification extends Model implements AuthenticatableContract, Authorizabl
 	use Authenticatable, Authorizable, HasFactory;
 
 	protected $table 	= "notificationtable";
-	protected $fillable = ["table","uniqueid","isread","created_at","updated_at"];
+	protected $fillable = ["table","uniqueid","notiffrom","notiffor","thenotif","isread","created_at","updated_at"];
 } 
 
 ?>

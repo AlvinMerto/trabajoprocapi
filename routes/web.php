@@ -30,5 +30,13 @@ $router->group(["prefix"=>"api"], function() use ($router) {
     $router->post("searchajob","Apicontrol@searchforajob");
 
     $router->post("applytojob","Apicontrol@applytojob");
-});
 
+    $router->post("readnotifs","Apicontrol@readnotifications");
+
+    $router->post("getnotifdetails","Apicontrol@getnotifdetails");
+
+    $router->post("hireworker","Apicontrol@hireworker");
+
+    $router->post("statusofopenedjob","Apicontrol@statusofopenedjob");
+    $router->post("currentlyhiring","Apicontrol@statusofcurrentlyhiring");
+});

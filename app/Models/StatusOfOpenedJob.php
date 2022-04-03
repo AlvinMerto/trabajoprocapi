@@ -13,7 +13,7 @@ class StatusOfOpenedJob extends Model implements AuthenticatableContract, Author
 	use Authenticatable, Authorizable, HasFactory;
 
 	protected $table 	= "statusofopenedjob";
-	protected $fillable = ["jobid","workerid","status","created_at","updated_at"];  
+	protected $fillable = ["jobid","workerid","status","targetdate","created_at","updated_at"];  
 } 
 
 ?>
