@@ -22,7 +22,7 @@
              
            $miles    = ($res*$radius);
 
-           return $miles * 1.609344; // in kilometers
+           return $miles * 1.609344; // in kilometers test only
 		}
 	}
 
